@@ -1,24 +1,24 @@
 <template>
-  <div class="home">
+  <div class="Todo">
     <navbar />
-    <jumbotron />
+    <kegiatan />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
+import kegiatan from "@/components/kegiatan.vue";
 import navbar from "@/components/navbar.vue";
-import jumbotron from "@/components/jumbotron";
 export default {
-  name: "Home",
+  name: "Todo",
   components: {
-    navbar,
-    jumbotron
+    kegiatan,
+    navbar
   }
 };
 </script>
 <style>
-.home {
+.Todo {
   height: 100%;
 }
 </style>
